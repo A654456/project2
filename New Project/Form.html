@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Form</title>
+  <!-- style sheets -->
+  <link rel="stylesheet" href="css/forum.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+        <div class="topnav">
+            <a href="Homepage.html">Homepage</a>
+            <a href="SearchFormTable.html">Search</a>
+            <a class="active" href="Form.html">Login Form</a>
+            <a href="TableOfContents.html">Table Of Contents</a>
+          </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+        <form id="registration-form" action="submit.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required>
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required>
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age" min="18" required>
+          <label for="gender">Gender:</label>
+          <select name="gender" id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <label for="country">Country:</label>
+          <input type="text" name="country" id="country" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+  </main>
+
+</body>
+</html>
